@@ -12,7 +12,8 @@ The notebook is structured as follows:
 
 3. **Helper Functions**: Contains utility functions for computing tour lengths, running greedy algorithms, generating random tours, and evaluating the Transformer model on TSP instances.
 
-4. **Dataset & DataLoader**: Defines the `TSPDataset` class for loading and processing TSP data, and sets up DataLoaders for training, validation, and testing.
+4. **Dataset & DataLoader**: Defines the `TSPDataset` class for loading and processing TSP data, and sets up DataLoaders for training, validation, and testing. The dataset used in this project comes from the work by **Chaitanya K Joshi et al.** in their paper:  
+   ["Learning the travelling salesperson problem requires rethinking generalization"](https://arxiv.org/abs/2006.07054) (arXiv preprint, 2020).
 
 5. **Model**: Implements the `TSPTransformer` model, which is a Transformer-based neural network designed to solve TSP instances. The model includes positional encoding and a custom architecture tailored for TSP.
 
@@ -68,7 +69,8 @@ The notebook provides visualizations of the training and validation losses, whic
 ## Acknowledgments
 
 -   The Transformer model architecture is inspired by the original Transformer paper ["Attention is All You Need"](https://arxiv.org/abs/1706.03762) by Vaswani et al.
--   The TSP dataset used in this notebook is a synthetic dataset generated for demonstration purposes.
+-   The TSP dataset used in this notebook is a synthetic dataset generated for demonstration purposes, based on the work by **Chaitanya K Joshi et al.** in their paper:  
+    ["Learning the travelling salesperson problem requires rethinking generalization"](https://arxiv.org/abs/2006.07054) (arXiv preprint, 2020).
 
 ## License
 
